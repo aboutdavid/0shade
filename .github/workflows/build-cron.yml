@@ -1,0 +1,21 @@
+name: gitme
+on:
+  schedule:
+    - cron:  '0 0 * * 0'
+jobs:
+  gitme-build-scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "18.x"
+      - run: "TZ='Etc/Utc'; export TZ"
+      - run: npm install
+      - run: node workflow.js
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          REPO: aboutdavid/0shade
+          BRANCH: main
+          EMAIL: 62346025+aboutdavid@users.noreply.github.com
+          NAME: aboutdavid

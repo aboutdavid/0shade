@@ -1,0 +1,10 @@
+{
+  "name": "0shade",
+  "version": "1.0.0",
+  "main": "compile.js",
+  "license": "See license.md",
+  "description": "No more throwaway emails",
+  "repository": "https://github.com/aboutdavid/0shade",
+  "author": "aboutdavid",
+  "private": true
+}
