@@ -1,3 +1,7 @@
+if (!process.env.GH_TOKEN) {
+  console.error("No access token detected. Exiting...")
+  process.exit(1)
+}
 console.log("Compiling data...")
 
 require("./run.js").command("node", ["compile.js"])
