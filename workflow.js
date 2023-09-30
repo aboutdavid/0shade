@@ -22,6 +22,6 @@ require("./run.js").command("git", [
   ]);
   require("./run.js").command("git", [
     "push",
-    `https://${process.env.GITHUB_TOKEN}@github.com/${process.env.REPO}.git`,
+    `https://${process.env.GH_TOKEN}@github.com/${process.env.REPO}.git`,
     process.env.BRANCH
   ]);

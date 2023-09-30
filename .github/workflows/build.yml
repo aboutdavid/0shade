@@ -9,7 +9,6 @@ jobs:
         with:
           node-version: "18.x"
       - run: "TZ='Etc/Utc'; export TZ"
-      - run: npm install
       - run: node workflow
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
