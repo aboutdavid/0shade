@@ -1,5 +1,3 @@
-const core = require("@actions/core");
-
 console.log("Compiling data...")
 
 require("./run.js").command("node", ["compile.js"])
