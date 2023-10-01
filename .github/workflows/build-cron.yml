@@ -1,9 +1,9 @@
-name: gitme
+name: build
 on:
   schedule:
     - cron:  '0 0 * * 0'
 jobs:
-  gitme-build-scheduled:
+  build-scheduled:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
