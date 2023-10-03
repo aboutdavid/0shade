@@ -1,6 +1,6 @@
 # 0shade - A blocklist for temporary email servers
 # A list of the domains that temporary email servers use. (the thing after the "@" symbol.)
-# Last Updated: September 30, 2023 at 8:10 AM (UTC)
+# Last Updated: October 3, 2023 at 4:38 PM (UTC)
 #
 # License: https://opendatacommons.org/licenses/odbl/1-0/
 # Git Repo: https://github.com/aboutdavid/0shade
@@ -463,3 +463,4 @@ picsviral.net
 oanghika.com
 catdogmail.live
 gekme.com
+sharklasers.com
